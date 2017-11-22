@@ -18,7 +18,6 @@ public class CreateShareTest {
 
     @BeforeClass
     public static void setup(){
-        //System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         createShare = new CreateShare(driver);
