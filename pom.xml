@@ -8,8 +8,6 @@
     <artifactId>pokupon</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
-
     <properties>
         <spring.version>4.0.0.RELEASE</spring.version>
         <java.version>1.7</java.version>
@@ -21,20 +19,18 @@
 
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.4.0</version>
         </dependency>
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-remote-driver</artifactId>
             <version>3.4.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
@@ -48,14 +44,13 @@
             <version>3.5.3</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
         <!--<dependency>-->
             <!--<groupId>org.apache.logging.log4j</groupId>-->
             <!--<artifactId>log4j-slf4j-impl</artifactId>-->
             <!--<version>2.9.1</version>-->
         <!--</dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 &ndash;&gt;-->
         <!--<dependency>-->
             <!--<groupId>org.slf4j</groupId>-->
             <!--<artifactId>slf4j-log4j12</artifactId>-->
@@ -63,10 +58,6 @@
             <!--<scope>test</scope>-->
         <!--</dependency>-->
 
-
-
-
-        <!-- https://mvnrepository.com/artifact/ru.stqa.selenium/webdriver-factory -->
         <dependency>
             <groupId>ru.stqa.selenium</groupId>
             <artifactId>webdriver-factory</artifactId>
@@ -83,12 +74,6 @@
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>junit</groupId>-->
-            <!--<artifactId>junit</artifactId>-->
-            <!--<version>4.12</version>-->
-            <!--<scope>test</scope>-->
-        <!--</dependency>-->
 
         <dependency>
             <groupId>org.testng</groupId>
@@ -97,7 +82,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
@@ -105,7 +89,4 @@
         </dependency>
 
     </dependencies>
-
-
-
 </project>

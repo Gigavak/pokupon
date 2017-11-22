@@ -27,7 +27,7 @@ class BoxDemo{
         System.out.println("Обьем равен " + vol);
         vol = mybox1.volume();
         System.out.println("Обьем равен " + vol);
-      
+
 
     }
 }
