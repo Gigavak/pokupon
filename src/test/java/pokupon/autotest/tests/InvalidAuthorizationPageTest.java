@@ -9,7 +9,7 @@ import pokupon.autotest.pages.AuthorizationPage;
 
 import java.util.concurrent.TimeUnit;
 
-public class InvalidAuthorizationTest {
+public class InvalidAuthorizationPageTest {
 
     public static WebDriver driver;
     public static AuthorizationPage authorizationPage;
