@@ -1,9 +1,10 @@
 package pokupon.autotest.tests;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 import pokupon.autotest.pages.AddSearchRule;
 
 import java.util.concurrent.TimeUnit;
@@ -15,13 +16,12 @@ public class AddSearchRuleTest {
 
     @BeforeClass
     public static void setup(){
-        System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
+
         driver = new FirefoxDriver();
         addSearchRule = new AddSearchRule(driver);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
         driver.get("https://pokupon.ua/users/sign_in");
-        //driver.get("https://pokupon.ua/");
 
     }
     @Test

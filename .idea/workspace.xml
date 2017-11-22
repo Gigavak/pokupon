@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3970d4b2-1a28-4edc-9030-4159234b0be2" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/InvalidAuthorizationTest.java" afterPath="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/InvalidAuthorizationPageTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/AddSearchRuleTest.java" afterPath="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/AddSearchRuleTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/ForgetPasswordTest.java" afterPath="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/ForgetPasswordTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/InvalidAuthorizationPageTest.java" afterPath="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/InvalidAuthorizationPageTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/LoginPageTest.java" afterPath="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/LoginPageTest.java" />
     </list>
     <ignored path="pokupon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,24 +42,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateShare.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/pages/CreateShare.java">
+      <file leaf-file-name="ForgetPasswordTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/ForgetPasswordTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="342">
+              <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Average.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/someTests/Average.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -70,38 +63,6 @@
                 <element signature="e#114#115#0" expanded="true" />
                 <element signature="e#159#160#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvalidAuthorizationPageTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/InvalidAuthorizationPageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthorizationPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/pages/AuthorizationPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="41" column="21" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -134,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/enums/Browser.java" />
         <option value="$PROJECT_DIR$/src/test/java/enums/PlatForm.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/core/WebDriverFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/WebDriverFactory.java" />
@@ -144,9 +104,7 @@
         <option value="$PROJECT_DIR$/src/test/java/someTests/SelectAllText.java" />
         <option value="$PROJECT_DIR$/src/test/java/someTests/FirstTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pokupon/autotest/pages/AddSearchRule.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/AddSearchRuleTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pokupon/autotest/pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/LoginPageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pokupon/autotest/pages/AuthorizationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/someTests/Tabs.java" />
         <option value="$PROJECT_DIR$/src/main/log4j2.xml" />
@@ -163,7 +121,6 @@
         <option value="$PROJECT_DIR$/src/test/java/pokupon/DDT/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/pokupon/DDT/RegistrationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pokupon/DDT/ParametrizedTestClass.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/ForgetPasswordTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/someTests/TestIde.java" />
         <option value="$PROJECT_DIR$/src/test/java/someTests/UntitledTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/someTests/Select.java" />
@@ -185,6 +142,10 @@
         <option value="$PROJECT_DIR$/src/test/java/someTests/Box.java" />
         <option value="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/InvalidAuthorizationTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/InvalidAuthorizationPageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/LoginPageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/AddSearchRuleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/ForgetPasswordTest.java" />
       </list>
     </option>
   </component>
@@ -805,7 +766,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511348476884</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="rename class">
+      <created>1511348687904</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1511348687904</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -842,6 +810,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="106" y="35" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -856,7 +825,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.4936429" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21890548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21890548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -908,7 +877,8 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="xml file delete log4factory" />
     <MESSAGE value="xml file update chromedriver" />
-    <option name="LAST_COMMIT_MESSAGE" value="xml file update chromedriver" />
+    <MESSAGE value="rename class" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -930,14 +900,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pokupon.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-947">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/test-classes/someTests/GetText.class" />
     <entry file="file://$PROJECT_DIR$/src/test/java/someTests/GetText.java" />
     <entry file="file://$PROJECT_DIR$/target/test-classes/someTests/App.class" />
     <entry file="file://$PROJECT_DIR$/target/test-classes/someTests/GetCookie.class">
@@ -977,13 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/LoginPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1072,16 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/ForgetPasswordTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-292">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/someTests/SelectTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1165,16 +1110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/CreateShareTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/someTests/Box.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
@@ -1202,21 +1137,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/pages/AuthorizationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/InvalidAuthorizationPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        <state relative-caret-position="160">
+          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/pages/AuthorizationPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/AddSearchRuleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="468">
+          <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/pages/AddSearchRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/LoginPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/CreateShareTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pokupon/autotest/tests/ForgetPasswordTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

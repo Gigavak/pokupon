@@ -16,11 +16,7 @@ public class InvalidAuthorizationPageTest {
 
     @BeforeClass
     public static void setup() {
-//        System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
        //driver = new FirefoxDriver();
-
-//        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-
         driver = new ChromeDriver();
 
         authorizationPage = new AuthorizationPage(driver);
