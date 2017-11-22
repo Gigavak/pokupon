@@ -11,11 +11,11 @@ import java.util.concurrent.TimeUnit;
 
 
 public class AddSearchRuleTest {
-    public static WebDriver driver;
-    public static AddSearchRule addSearchRule;
+    public  WebDriver driver;
+    public  AddSearchRule addSearchRule;
 
     @BeforeClass
-    public static void setup(){
+    public void setup(){
 
         driver = new FirefoxDriver();
         addSearchRule = new AddSearchRule(driver);
@@ -27,8 +27,8 @@ public class AddSearchRuleTest {
     @Test
     public void addSearchRuleTest() {
 
-        addSearchRule.inputLogin("r.humeniuk@superdeal.com.ua");
-        addSearchRule.inputPassword("afina");
+        addSearchRule.inputLogin("");
+        addSearchRule.inputPassword("");
         addSearchRule.clickLoginButton();
         driver.get("https://pokupon.ua/manager");
         addSearchRule.clickChooseButton();
