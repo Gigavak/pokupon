@@ -1,9 +1,10 @@
 package pokupon.autotest.tests;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 import pokupon.autotest.pages.AuthorizationPage;
 
 import java.util.concurrent.TimeUnit;
@@ -16,10 +17,10 @@ public class InvalidAuthorizationTest {
     @BeforeClass
     public static void setup() {
 //        System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
-//        driver = new FirefoxDriver();
+       driver = new FirefoxDriver();
 
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-        WebDriver driver = new ChromeDriver();
+//        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+//        WebDriver driver = new ChromeDriver();
 
         authorizationPage = new AuthorizationPage(driver);
         driver.manage().window().maximize();
