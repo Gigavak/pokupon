@@ -28,5 +28,7 @@ class BoxDemo{
         vol = mybox1.volume();
         System.out.println("Обьем равен " + vol);
         System.out.println("первый коммит");
+        System.out.println("второй коммит");
+
     }
 }
