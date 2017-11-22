@@ -30,8 +30,8 @@ public class LoginPageTest {
     @Test
     public void addLoginPageTest() {
 
-        loginPage.inputLogin("testpokupon01gmail.com");
-        loginPage.inputPassword("testpokupon01@gmail.com");
+        loginPage.inputLogin("testpokupon01@gmail.com");
+        loginPage.inputPassword("testpokupon02");
         loginPage.clickLoginButton();
         loginPage.clickUserDropdown();
         loginPage.clickSignOut();
