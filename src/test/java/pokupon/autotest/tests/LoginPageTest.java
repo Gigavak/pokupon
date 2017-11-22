@@ -11,11 +11,11 @@ import pokupon.autotest.pages.LoginPage;
 import java.util.concurrent.TimeUnit;
 
 public class LoginPageTest {
-    public static WebDriver driver;
-    public static LoginPage loginPage;
+    public  WebDriver driver;
+    public  LoginPage loginPage;
 
     @BeforeClass
-    public static void setup() {
+    public void setup() {
 
 //        driver = new FirefoxDriver();
 
