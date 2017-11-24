@@ -6,6 +6,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import pokupon.autotest.globalTestData.LoginData;
 import pokupon.autotest.pages.LoginPage;
 
 import java.util.concurrent.TimeUnit;
@@ -13,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 public class LoginPageTest {
     public  WebDriver driver;
     public  LoginPage loginPage;
+    LoginData loginData= new LoginData();
 
     @BeforeClass
     public void setup() {
@@ -30,8 +32,8 @@ public class LoginPageTest {
     @Test
     public void addLoginPageTest() {
 
-        loginPage.inputLogin("testpokupon01@gmail.com");
-        loginPage.inputPassword("testpokupon02");
+        loginPage.inputLogin(loginData.getManagerUserName());
+        loginPage.inputPassword(loginData.getManagerUserPassword());
         loginPage.clickLoginButton();
         loginPage.clickUserDropdown();
         loginPage.clickSignOut();
