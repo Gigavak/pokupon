@@ -13,7 +13,6 @@ import static pokupon.autotest.globalTestData.DriverFactory.driver;
 
 public class InvalidAuthorizationPageTest {
 
-    //public static WebDriver driver;
     public static AuthorizationPage authorizationPage;
     LoginData loginInput = new LoginData();
 

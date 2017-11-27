@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 public class AddSearchRuleTest {
     public  WebDriver driver;
-    public  AddSearchRule addSearchRule;
+    public static AddSearchRule addSearchRule;
 
     @BeforeClass
     public void setup(){
