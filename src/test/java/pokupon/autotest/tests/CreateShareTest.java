@@ -1,9 +1,9 @@
 package pokupon.autotest.tests;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pokupon.autotest.globalTestData.DriverFactory;
 import pokupon.autotest.globalTestData.LoginData;
 import pokupon.autotest.pages.CreateShare;
 
@@ -20,7 +20,12 @@ public class CreateShareTest {
 
     @BeforeClass
     public static void setup(){
-        driver = new FirefoxDriver();
+
+
+        DriverFactory.getBrowser("Chrome");
+
+        driver = DriverFactory.driver;
+
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         createShare = new CreateShare(driver);
         driver.get("https://pokupon.ua/users/sign_in");

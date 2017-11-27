@@ -3,9 +3,9 @@ package pokupon.autotest.tests;
 
 import org.openqa.selenium.InvalidSelectorException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pokupon.autotest.globalTestData.DriverFactory;
 import pokupon.autotest.pages.ForgetPasswordPage;
 
 import java.util.concurrent.TimeUnit;
@@ -18,9 +18,10 @@ public class ForgetPasswordTest {
 
     @BeforeClass
     public static void setup() {
-//        driver = new FirefoxDriver();
 
-        driver = new ChromeDriver();
+        DriverFactory.getBrowser("Chrome");
+
+        driver = DriverFactory.driver;
 
         forgetPasswordPage = new ForgetPasswordPage(driver);
         driver.manage().window().maximize();

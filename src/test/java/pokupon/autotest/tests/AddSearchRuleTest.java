@@ -2,9 +2,9 @@ package pokupon.autotest.tests;
 
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pokupon.autotest.globalTestData.DriverFactory;
 import pokupon.autotest.pages.AddSearchRule;
 
 import java.util.concurrent.TimeUnit;
@@ -17,7 +17,11 @@ public class AddSearchRuleTest {
     @BeforeClass
     public void setup(){
 
-        driver = new FirefoxDriver();
+        DriverFactory.getBrowser("Chrome");
+
+        driver = DriverFactory.driver;
+
+
         addSearchRule = new AddSearchRule(driver);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);

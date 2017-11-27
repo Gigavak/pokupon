@@ -11,13 +11,12 @@ public class SwitchBrowserTabsChrome {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-<<<<<<< HEAD
         driver.get("https://pokupon.ua");
-=======
+
         driver.get("http://www.google.com");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL + "t");
->>>>>>> local
+
 
         driver.get("http://www.gmail.com");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

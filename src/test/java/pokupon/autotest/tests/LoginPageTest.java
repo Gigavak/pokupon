@@ -5,7 +5,7 @@ import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import pokupon.autotest.globalTestData.DriverFactory;
 import pokupon.autotest.globalTestData.LoginData;
 import pokupon.autotest.pages.LoginPage;
 
@@ -19,9 +19,9 @@ public class LoginPageTest {
     @BeforeClass
     public static void setup() {
 
-//        driver = new FirefoxDriver();
+        DriverFactory.getBrowser("Chrome");
 
-        driver = new ChromeDriver();
+        driver = DriverFactory.driver;
 
         loginPage = new LoginPage(driver);
         driver.manage().window().maximize();
