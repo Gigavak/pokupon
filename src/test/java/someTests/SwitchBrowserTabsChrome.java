@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public class SwitchBrowserTabsChrome {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get("https://pokupon.ua");
 
         driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL +"t");
