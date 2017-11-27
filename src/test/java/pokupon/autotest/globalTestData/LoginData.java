@@ -1,8 +1,8 @@
 package pokupon.autotest.globalTestData;
 
 public class LoginData {
-    private String managerUserName = "";
-    private String managerUserPassword = "";
+    private String managerUserName = "donpokupon@gmail.com";
+    private String managerUserPassword = "donpokupon01";
     private String simpleUserName = "testpokupon01@gmail.com";
     private String simpleUserPassword = "testpokupon02";
 

@@ -12,12 +12,12 @@ import pokupon.autotest.pages.LoginPage;
 import java.util.concurrent.TimeUnit;
 
 public class LoginPageTest {
-    public  WebDriver driver;
-    public  LoginPage loginPage;
+    public static WebDriver driver;
+    public static LoginPage loginPage;
     LoginData loginData= new LoginData();
 
     @BeforeClass
-    public void setup() {
+    public static void setup() {
 
 //        driver = new FirefoxDriver();
 
@@ -32,8 +32,8 @@ public class LoginPageTest {
     @Test
     public void addLoginPageTest() {
 
-        loginPage.inputLogin(loginData.getManagerUserName());
-        loginPage.inputPassword(loginData.getManagerUserPassword());
+        loginPage.inputLogin(loginData.getSimpleUserName());
+        loginPage.inputPassword(loginData.getSimpleUserPassword());
         loginPage.clickLoginButton();
         loginPage.clickUserDropdown();
         loginPage.clickSignOut();
