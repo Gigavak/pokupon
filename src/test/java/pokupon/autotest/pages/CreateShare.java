@@ -315,11 +315,20 @@ public class CreateShare  {
     public void inputCouponFinishAt(String finish) {
         couponDateFinishAt.sendKeys(finish);
     }
-    public void clickChooseDraft(){chooseDraft.click();}
-    public void clickShowOnWeb(){chooseShowOnWeb.click();}
-    public void clickShowOnMerchant(){showOnMerchant.click();}
-    public void clickTurnOnReservation(){turnOnReservation.click();}
-    public void clickChooseProvider(){chooseProvider.click();}
+    public void clickChooseDraft(){
+        chooseDraft.click(); }
+    public void clickShowOnWeb() {
+        chooseShowOnWeb.click();
+    }
+    public void clickShowOnMerchant(){
+        showOnMerchant.click();
+    }
+    public void clickTurnOnReservation(){
+        turnOnReservation.click();
+    }
+    public void clickChooseProvider(){
+        chooseProvider.click();
+    }
     //public void clickShowOnFullWeb(){showOnFullWeb.click();}
     //public void clickShowOnMobile(){showOnMobile.click();}
     //public void clickChooseAllCities(){chooseAllCities.click();}

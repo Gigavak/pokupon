@@ -36,25 +36,26 @@ public class InvalidAuthorizationPageTest {
     }
     @Test(priority = 1)
             public void test2() {
+        authorizationPage.clearEmailField();
         authorizationPage.inputInvalidEmail("wrew");
-        authorizationPage.inputPassword("12342");
+        authorizationPage.inputPassword(loginInput.getInvalidUserPassword());
         authorizationPage.clickLoginButton();
     }
     @Test(priority = 2)
             public void test3() {
         authorizationPage.clearEmailField();
-        authorizationPage.inputEmptyEmail("");
+        authorizationPage.clearPasswordField();
         authorizationPage.clickLoginButton();
     }
     @Test(priority = 3)
             public void test4() {
-        authorizationPage.clearPasswordField();
-        authorizationPage.inputEmail("abc@gmail.com");
+        authorizationPage.inputEmail(loginInput.getInvalidUserName());
         authorizationPage.clickLoginButton();
     }
     @Test(priority = 4)
             public void test5(){
         authorizationPage.clearEmailField();
+        authorizationPage.inputPassword(loginInput.getInvalidUserPassword());
         authorizationPage.clickLoginButton();
     }
 
