@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pokupon.autotest.globalTestData.LoginData;
 import pokupon.autotest.pages.CreateShare;
 
 import java.util.concurrent.TimeUnit;
@@ -15,6 +16,7 @@ public class CreateShareTest {
 
     public static WebDriver driver;
     public static CreateShare createShare;
+    LoginData loginInput = new LoginData();
 
     @BeforeClass
     public static void setup(){
@@ -26,8 +28,8 @@ public class CreateShareTest {
     //login into admin account
     @Test(description="Navigates to the login page")
     public void test1() {
-        createShare.inputLogin("r.humeniuk@superdeal.com.ua");
-        createShare.inputPassword("afina");
+        createShare.inputLogin(loginInput.getManagerUserName());
+        createShare.inputPassword(loginInput.getManagerUserPassword());
         createShare.clickLoginButton();
         driver.get("https://pokupon.ua/manager");
 

@@ -52,7 +52,6 @@ public class LoginData {
         this.simpleUserPassword = simpleUserPassword;
     }
 
-
     public String getInvalidUserName() {
         return invalidUserName;
     }
