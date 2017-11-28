@@ -16,5 +16,6 @@ public class SwitchBrowserTabsChrome {
         driver.get("http://superdeal.ua");
         driver.switchTo().window(tabs.get(0));
 
+
     }
 }

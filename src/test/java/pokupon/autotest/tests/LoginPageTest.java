@@ -1,10 +1,10 @@
 package pokupon.autotest.tests;
 
 
-import org.junit.After;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 import pokupon.autotest.globalTestData.DriverFactory;
 import pokupon.autotest.globalTestData.LoginData;
 import pokupon.autotest.pages.LoginPage;
@@ -39,7 +39,7 @@ public class LoginPageTest {
         loginPage.clickSignOut();
     }
 
-    @After
+    @AfterClass
     public void tearDown(){ driver.close();
     }
 }
