@@ -83,7 +83,11 @@ public class NewUserRegistration {
         return password;
     }
 
-    public void submitPassword(String pass) {submitPassword.sendKeys(password);}
+    public void submitPassword(String pass) {
+        submitPassword.sendKeys(password);
+    }
 
-    public void submitContinue() { submitContinue.submit();}
+    public void submitContinue() {
+        submitContinue.submit();
+    }
 }

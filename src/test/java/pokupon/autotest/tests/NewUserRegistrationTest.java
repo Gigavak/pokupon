@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pokupon.autotest.globalTestData.DriverFactory;
+import pokupon.autotest.globalTestData.LoginData;
 import pokupon.autotest.pages.NewUserRegistration;
 
 import java.util.ArrayList;
@@ -13,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 public class NewUserRegistrationTest {
     public static WebDriver driver;
     public static NewUserRegistration newUserRegistration;
+    LoginData loginData= new LoginData();
 
 
     @BeforeClass
@@ -30,7 +32,7 @@ public class NewUserRegistrationTest {
     @Test(priority = 1)
     public void addNewUser(){
 
-        newUserRegistration.userEmail("gigavak@ukr.net");
+        newUserRegistration.userEmail(loginData.getNewUserRegistrationName());
         newUserRegistration.submitButton();
 
     }
@@ -41,8 +43,8 @@ public class NewUserRegistrationTest {
         driver.switchTo().window(tabs.get(1));
         driver.get("https://mail.ukr.net/desktop/login");
 
-        newUserRegistration.mailLogin("gigavak");
-        newUserRegistration.mailPassword("afina2016");
+        newUserRegistration.mailLogin(loginData.getNewUserMailLogin());
+        newUserRegistration.mailPassword(loginData.getNewUserMailPassword());
         newUserRegistration.submitMailButton();
         newUserRegistration.someMail();
         newUserRegistration.getPassword();

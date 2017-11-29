@@ -7,14 +7,21 @@ public class LoginData {
     private String simpleUserPassword = "testpokupon02";
     private String invalidUserName = "dasdad@gmail.com";
     private String invalidUserPassword = "asd213";
+    private String newUserRegistrationName = "gigavak@ukr.net";
+    private String newUserMailLogin = "gigavak";
+    private String newUserMailPassword = "afina2016";
 
-    public LoginData(String managerUserName, String managerUserPassword, String simpleUserName, String simpleUserPassword, String invalidUserName, String invalidUserPassword) {
+
+    public LoginData(String managerUserName, String managerUserPassword, String simpleUserName, String simpleUserPassword, String invalidUserName, String invalidUserPassword, String newUserRegistrationName, String newUserMailLogin, String newUserMailPassword) {
         this.managerUserName = managerUserName;
         this.managerUserPassword = managerUserPassword;
         this.simpleUserName = simpleUserName;
         this.simpleUserPassword = simpleUserPassword;
         this.invalidUserName = invalidUserName;
         this.invalidUserPassword = invalidUserPassword;
+        this.newUserRegistrationName = newUserRegistrationName;
+        this.newUserMailLogin = newUserMailLogin;
+        this.newUserMailPassword = newUserMailPassword;
     }
     public LoginData(){
         super();
@@ -66,5 +73,29 @@ public class LoginData {
 
     public void setInvalidUserPassword(String invalidUserPassword) {
         this.invalidUserPassword = invalidUserPassword;
+    }
+
+    public String getNewUserRegistrationName() {
+        return newUserRegistrationName;
+    }
+
+    public void setNewUserRegistrationName(String newUserRegistrationName) {
+        this.newUserRegistrationName = newUserRegistrationName;
+    }
+
+    public String getNewUserMailLogin() {
+        return newUserMailLogin;
+    }
+
+    public void setNewUserMailLogin(String newUserMailLogin) {
+        this.newUserMailLogin = newUserMailLogin;
+    }
+
+    public String getNewUserMailPassword() {
+        return newUserMailPassword;
+    }
+
+    public void setNewUserMailPassword(String newUserMailPassword) {
+        this.newUserMailPassword = newUserMailPassword;
     }
 }
