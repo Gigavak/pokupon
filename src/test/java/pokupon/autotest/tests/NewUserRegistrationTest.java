@@ -30,8 +30,8 @@ public class NewUserRegistrationTest {
     @Test(priority = 1)
     public void addNewUser(){
 
-        //newUserRegistration.userEmail("gigavak@ukr.net");
-        //newUserRegistration.submitButton();
+        newUserRegistration.userEmail("gigavak@ukr.net");
+        newUserRegistration.submitButton();
 
     }
     @Test(priority = 2)
@@ -52,7 +52,8 @@ public class NewUserRegistrationTest {
     public void backTab(){
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(0));
-        newUserRegistration.userEmail(newUserRegistration.getSavedPassword());
+        newUserRegistration.submitPassword(newUserRegistration.getSavedPassword());
+        newUserRegistration.submitContinue();
 
     }
 }

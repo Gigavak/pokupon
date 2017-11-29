@@ -35,9 +35,15 @@ public class NewUserRegistration {
     WebElement someMail;
 
 
-    @FindBy(className = "readmsg__subject")
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div/div/div[2]/section/div[2]/div[1]/span/span[2]/table[2]/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr/td/p[5]")
     WebElement getPassword;
 
+
+    @FindBy(id = "password")
+    WebElement submitPassword;
+
+    @FindBy(id = "popup-sign-in-form-submit")
+    WebElement submitContinue;
 
 
     public void userEmail(String login){
@@ -67,12 +73,17 @@ public class NewUserRegistration {
     }
 
     public void getPassword() {
+
         password = getPassword.getText().toString();
+        int index = password.indexOf(":");
+        password = password.substring(index+1, password.length());
     }
 
     public String getSavedPassword(){
         return password;
     }
 
+    public void submitPassword(String pass) {submitPassword.sendKeys(password);}
 
+    public void submitContinue() { submitContinue.submit();}
 }
