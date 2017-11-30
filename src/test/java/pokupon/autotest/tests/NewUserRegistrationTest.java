@@ -41,7 +41,7 @@ public class NewUserRegistrationTest {
         ((JavascriptExecutor)driver).executeScript("window.open()");
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
-        driver.get("https://mail.ukr.net/desktop/login");
+        driver.get("http://www.yopmail.com/ru/");
 
         newUserRegistration.mailLogin(loginData.getNewUserMailLogin());
         newUserRegistration.mailPassword(loginData.getNewUserMailPassword());

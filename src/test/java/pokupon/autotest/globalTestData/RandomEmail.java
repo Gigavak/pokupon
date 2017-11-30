@@ -21,7 +21,7 @@ public class RandomEmail extends LoginData {
         this.randomMail = randomMail;
     }
 
-    public  String getSaltString() {
+    public String getSaltString() {
         String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         StringBuilder salt = new StringBuilder();
         Random rnd = new Random();
@@ -33,8 +33,9 @@ public class RandomEmail extends LoginData {
         return saltStr;
     }
 
-    public  String randomEmail(String random){
+    public String randomEmail(String random){
         String randomEm = random + "@yopmail.com";
         return randomEm;
     }
+
 }

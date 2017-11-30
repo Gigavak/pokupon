@@ -23,18 +23,11 @@ public class NewUserRegistration {
     WebElement submitButton;
 
     //input values into mail
-    @FindBy(id ="id-1")
-    WebElement mailLogin;
-
-    @FindBy(id ="id-2")
-    WebElement mailPassword;
-
-    @FindBy(xpath = "/html/body/div/div/main/form/button")
+    @FindBy(xpath = "/html/body/center/div/div/div[3]/table[3]/tbody/tr/td[1]/table/tbody/tr[3]/td/div[1]/form/table/tbody/tr[1]/td[3]/input")
     WebElement submitMailButton;
 
     @FindBy(className = "msglist__row_href")
     WebElement someMail;
-
 
     @FindBy(xpath = "/html/body/div[1]/div[2]/div/div/div[2]/section/div[2]/div[1]/span/span[2]/table[2]/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr/td/p[5]")
     WebElement getPassword;

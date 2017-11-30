@@ -15,8 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class LoginPageTest {
     public static WebDriver driver;
     public static LoginPage loginPage;
-//    LoginData loginData= new LoginData();
-    RandomEmail randomEmail = new RandomEmail();
+    LoginData loginData= new LoginData();
 
     @BeforeClass
     public static void setup() {
@@ -34,8 +33,8 @@ public class LoginPageTest {
     @Test
     public void addLoginPageTest() {
 
-        loginPage.inputLogin(randomEmail.getSimpleUserName());
-        loginPage.inputPassword(randomEmail.getSimpleUserPassword());
+        loginPage.inputLogin(RandomEmail.);
+        loginPage.inputPassword(loginData.getSimpleUserPassword());
         loginPage.clickLoginButton();
         loginPage.clickUserDropdown();
         loginPage.clickSignOut();
