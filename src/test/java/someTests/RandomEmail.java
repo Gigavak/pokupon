@@ -3,26 +3,26 @@ package someTests;
 import java.util.Random;
 
 public class RandomEmail {
-    private static String randomEmail;
+    public static void main(String[] args) {
+        System.out.println(randomEmail(getSaltString()));
 
-    public RandomEmail(String randomEmail) {
-        this.randomEmail = randomEmail;
     }
 
-    public String getRandomEmail() {
-        return randomEmail;
-    }
 
-    public void setRandomEmail(String randomEmail) {
-        this.randomEmail = randomEmail;
-    }
-    public static String ramdom(){
-        String alphabet = "";
-        int N = 10;
-        Random r = new Random();
-        for (int i = 0; i<N; i++){
-            System.out.print(alphabet.charAt(r.nextInt(N)));
+    public static String getSaltString() {
+        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        StringBuilder salt = new StringBuilder();
+        Random rnd = new Random();
+        while (salt.length() < 10) { // length of the random string.
+            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+            salt.append(SALTCHARS.charAt(index));
         }
-        return alphabet;
+        String saltStr = salt.toString();
+        return saltStr;
     }
+
+    public static String randomEmail(String random){
+        String randomEm = random + "@yopmail.com";
+        return randomEm;
+     }
 }
