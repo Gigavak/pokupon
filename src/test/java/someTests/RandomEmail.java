@@ -4,7 +4,8 @@ import java.util.Random;
 
 public class RandomEmail {
     public static void main(String[] args) {
-        System.out.println(randomEmail(getSaltString()));
+        String a = randomEmail(getSaltString());
+        System.out.println(a);
 
     }
 

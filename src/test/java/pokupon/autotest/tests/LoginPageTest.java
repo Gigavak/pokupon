@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import pokupon.autotest.globalTestData.DriverFactory;
 import pokupon.autotest.globalTestData.LoginData;
 import pokupon.autotest.pages.LoginPage;
+import someTests.RandomEmail;
 
 import java.util.concurrent.TimeUnit;
 
@@ -32,7 +33,7 @@ public class LoginPageTest {
     @Test
     public void addLoginPageTest() {
 
-        loginPage.inputLogin(loginData.getSimpleUserName());
+        loginPage.inputLogin(RandomEmail.randomEmail(RandomEmail.getSaltString()));
         loginPage.inputPassword(loginData.getSimpleUserPassword());
         loginPage.clickLoginButton();
         loginPage.clickUserDropdown();

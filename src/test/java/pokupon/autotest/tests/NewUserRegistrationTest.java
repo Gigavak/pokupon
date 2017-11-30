@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import pokupon.autotest.globalTestData.DriverFactory;
 import pokupon.autotest.globalTestData.LoginData;
 import pokupon.autotest.pages.NewUserRegistration;
+import someTests.RandomEmail;
 
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
@@ -32,8 +33,8 @@ public class NewUserRegistrationTest {
     @Test(priority = 1)
     public void addNewUser(){
 
-        newUserRegistration.userEmail(loginData.getNewUserRegistrationName());
-        newUserRegistration.submitButton();
+        newUserRegistration.userEmail(RandomEmail.randomEmail(RandomEmail.getSaltString()));
+        //newUserRegistration.submitButton();
 
     }
     @Test(priority = 2)
@@ -41,10 +42,9 @@ public class NewUserRegistrationTest {
         ((JavascriptExecutor)driver).executeScript("window.open()");
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
-        driver.get("https://mail.ukr.net/desktop/login");
+        driver.get("http://www.yopmail.com/ru/");
 
-        newUserRegistration.mailLogin(loginData.getNewUserMailLogin());
-        newUserRegistration.mailPassword(loginData.getNewUserMailPassword());
+        newUserRegistration.mailLogin(RandomEmail.randomEmail(RandomEmail.getSaltString()));
         newUserRegistration.submitMailButton();
         newUserRegistration.someMail();
         newUserRegistration.getPassword();
