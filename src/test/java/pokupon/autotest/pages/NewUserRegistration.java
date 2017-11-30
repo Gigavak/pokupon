@@ -15,6 +15,7 @@ public class NewUserRegistration {
 
     private String password;
 
+
     @FindBy(id = "user_email")
     WebElement userEmail;
 
@@ -90,4 +91,7 @@ public class NewUserRegistration {
     public void submitContinue() {
         submitContinue.submit();
     }
+
+
+
 }
