@@ -16,6 +16,7 @@ public class PurchaseShareTest {
     public static void setup(){
         DriverFactory.getBrowser("Firefox");
         driver = DriverFactory.driver;
+        purchaseShare = new PurchaseShare(driver);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://pokupon.ua");
