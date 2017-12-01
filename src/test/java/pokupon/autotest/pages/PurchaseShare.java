@@ -7,12 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PurchaseShare {
 
-
+    public WebDriver driver;
     public PurchaseShare(WebDriver driver){
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
-    public WebDriver driver;
+
 
     @FindBy(css = ".favorites")
     WebElement mainShare;
