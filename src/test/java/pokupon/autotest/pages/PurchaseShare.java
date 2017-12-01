@@ -2,6 +2,7 @@ package pokupon.autotest.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -14,7 +15,7 @@ public class PurchaseShare {
     }
 
 
-    @FindBy(css = ".favorites")
+    @FindBy(xpath = "/html/body/main/section[1]/div/div[2]/div[1]/div[1]")
     WebElement mainShare;
 
     @FindBy(css = "button.deal-buy:nth-child(2)")
@@ -30,10 +31,14 @@ public class PurchaseShare {
         mainShare.click();
     }
     public void clickMultiButtonBuy(){
-        multiButtonBuy.click();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(multiButtonBuy);
+        actions.click();
+        actions.perform();
+//        multiButtonBuy.click();
     }
     public void clickFirstButtonInSelect(){
-        firstButtonInSelect.click();
+         firstButtonInSelect.click();
     }
     public void clickSimpleButtonBuy(){
         simpleButtonBuy.click();
