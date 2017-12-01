@@ -23,23 +23,16 @@ public class NewUserRegistration {
     WebElement submitButton;
 
     //input values into mail
-    @FindBy(id ="id-1")
+    @FindBy(id = "login")
     WebElement mailLogin;
 
-    @FindBy(id ="id-2")
-    WebElement mailPassword;
-
-    @FindBy(xpath = "/html/body/div/div/main/form/button")
+    @FindBy(className = "sbut")
     WebElement submitMailButton;
 
-    @FindBy(className = "msglist__row_href")
-    WebElement someMail;
-
-
-    @FindBy(xpath = "/html/body/div[1]/div[2]/div/div/div[2]/section/div[2]/div[1]/span/span[2]/table[2]/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr/td/p[5]")
+    @FindBy(xpath = "/html/body/div/div[3]/div[2]/table[2]/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr/td/p[5]")
     WebElement getPassword;
 
-
+    //input values into submit password field
     @FindBy(id = "password")
     WebElement submitPassword;
 
@@ -61,21 +54,14 @@ public class NewUserRegistration {
         mailLogin.sendKeys(mailLoginField);
     }
 
-    public void mailPassword(String mailPass) {
-        mailPassword.sendKeys(mailPass);
-    }
-
     public void submitMailButton() {
         submitMailButton.submit();
-    }
-
-    public void someMail() {
-        someMail.click();
     }
 
     public void getPassword() {
 
         password = getPassword.getText().toString();
+        System.out.println(password);
         int index = password.indexOf(":");
         password = password.substring(index+1, password.length());
     }
@@ -84,6 +70,7 @@ public class NewUserRegistration {
         return password;
     }
 
+    //input values into submit password field
     public void submitPassword(String pass) {
         submitPassword.sendKeys(password);
     }

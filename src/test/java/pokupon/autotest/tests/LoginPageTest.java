@@ -6,7 +6,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pokupon.autotest.globalTestData.DriverFactory;
-import pokupon.autotest.globalTestData.LoginData;
 import pokupon.autotest.globalTestData.RandomEmail;
 import pokupon.autotest.pages.LoginPage;
 
@@ -15,7 +14,6 @@ import java.util.concurrent.TimeUnit;
 public class LoginPageTest {
     public static WebDriver driver;
     public static LoginPage loginPage;
-//    LoginData loginData= new LoginData();
     RandomEmail randomEmail = new RandomEmail();
 
     @BeforeClass
