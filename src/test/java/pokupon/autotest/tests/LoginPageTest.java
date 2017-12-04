@@ -27,7 +27,7 @@ public class LoginPageTest {
 
         loginPage = new LoginPage(driver);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get("https://pokupon.ua/users/sign_in");
     }
 

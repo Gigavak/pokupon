@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="pokupon.autotest.tests.CreateShareTest">
+        <methods>
+          <include name="test5"/>
+          <include name="test3"/>
+          <include name="test4"/>
+          <include name="test9"/>
+          <include name="test2"/>
+          <include name="test7"/>
+          <include name="test8"/>
+          <include name="setup"/>
+          <include name="test6"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- pokupon.autotest.tests.CreateShareTest -->
+      <class name="pokupon.autotest.tests.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="addLoginPageTest"/>
+        </methods>
+      </class> <!-- pokupon.autotest.tests.LoginPageTest -->
+      <class name="pokupon.autotest.tests.NewUserRegistrationTest">
+        <methods>
+          <include name="addNewUser"/>
+          <include name="backTab"/>
+          <include name="setup"/>
+          <include name="newTabMailAgent"/>
+        </methods>
+      </class> <!-- pokupon.autotest.tests.NewUserRegistrationTest -->
+      <class name="pokupon.autotest.tests.AddSearchRuleTest">
+        <methods>
+          <include name="addSearchRuleTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- pokupon.autotest.tests.AddSearchRuleTest -->
+      <class name="pokupon.autotest.tests.InvalidAuthorizationPageTest">
+        <methods>
+          <include name="test2"/>
+          <include name="test5"/>
+          <include name="test3"/>
+          <include name="setup"/>
+          <include name="test1"/>
+          <include name="test4"/>
+        </methods>
+      </class> <!-- pokupon.autotest.tests.InvalidAuthorizationPageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

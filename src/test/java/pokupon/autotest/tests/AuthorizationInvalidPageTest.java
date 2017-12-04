@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 import static pokupon.autotest.globalTestData.DriverFactory.driver;
 
-public class InvalidAuthorizationPageTest {
+public class AuthorizationInvalidPageTest {
 
     public static AuthorizationPage authorizationPage;
     LoginData loginInput = new LoginData();
@@ -26,7 +26,7 @@ public class InvalidAuthorizationPageTest {
 
         authorizationPage = new AuthorizationPage(driver);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get("https://pokupon.ua/users/sign_in");
     }
     @Test
