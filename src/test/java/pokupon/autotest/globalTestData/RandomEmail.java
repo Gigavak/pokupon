@@ -3,7 +3,7 @@ package pokupon.autotest.globalTestData;
 import java.util.Random;
 
 public class RandomEmail extends LoginData {
-    private String randomMail = randomEmail(getSaltString());
+    private String randomMail = randomEmail(SaltString());
 
     public RandomEmail(String managerUserName, String managerUserPassword, String simpleUserName, String simpleUserPassword, String invalidUserName, String invalidUserPassword, String newUserRegistrationName, String newUserMailLogin, String newUserMailPassword, String randomMail) {
         super(managerUserName, managerUserPassword, simpleUserName, simpleUserPassword, invalidUserName, invalidUserPassword, newUserRegistrationName, newUserMailLogin, newUserMailPassword);
@@ -21,7 +21,7 @@ public class RandomEmail extends LoginData {
         this.randomMail = randomMail;
     }
 
-    public String getSaltString() {
+    public String SaltString() {
         String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         StringBuilder salt = new StringBuilder();
         Random rnd = new Random();
