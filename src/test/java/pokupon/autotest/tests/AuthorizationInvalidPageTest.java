@@ -1,6 +1,7 @@
 package pokupon.autotest.tests;
 
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pokupon.autotest.globalTestData.DriverFactory;
@@ -20,7 +21,7 @@ public class AuthorizationInvalidPageTest {
     @BeforeClass
     public static void setup() {
 
-        DriverFactory.getBrowser("Chrome");
+        DriverFactory.getBrowser("Firefox");
 
         driver = DriverFactory.driver;
 
@@ -61,6 +62,8 @@ public class AuthorizationInvalidPageTest {
         authorizationPage.inputPassword(loginInput.getInvalidUserPassword());
         authorizationPage.clickLoginButton();
     }
-
+    @AfterClass
+    public void tearDown(){ driver.quit();
+    }
 
 }

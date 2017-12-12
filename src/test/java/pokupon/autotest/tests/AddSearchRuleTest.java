@@ -13,12 +13,12 @@ import java.util.concurrent.TimeUnit;
 
 
 public class AddSearchRuleTest {
-    public  WebDriver driver;
+    public static WebDriver driver;
     public static AddSearchRule addSearchRule;
     LoginData loginData = new LoginData();
 
     @BeforeClass
-    public void setup(){
+    public static void setup(){
 
         DriverFactory.getBrowser("Firefox");
         driver = DriverFactory.driver;
@@ -45,6 +45,6 @@ public class AddSearchRuleTest {
     }
     @AfterTest
     public void tearDown(){
-        driver.close();
+        driver.quit();
     }
 }

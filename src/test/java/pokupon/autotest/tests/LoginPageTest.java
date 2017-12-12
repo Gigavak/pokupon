@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pokupon.autotest.globalTestData.DriverFactory;
 import pokupon.autotest.globalTestData.LoginData;
-import pokupon.autotest.globalTestData.RandomEmail;
 import pokupon.autotest.pages.LoginPage;
 
 import java.util.concurrent.TimeUnit;
@@ -16,7 +15,7 @@ public class LoginPageTest {
     public static WebDriver driver;
     public static LoginPage loginPage;
     LoginData loginData= new LoginData();
-    RandomEmail randomEmail = new RandomEmail();
+
 
     @BeforeClass
     public static void setup() {
@@ -34,14 +33,14 @@ public class LoginPageTest {
     @Test
     public void addLoginPageTest() {
 
-        loginPage.inputLogin(randomEmail.getRandomMail());
-        loginPage.inputPassword(randomEmail.getSimpleUserPassword());
+        loginPage.inputLogin(loginData.getSimpleUserName());
+        loginPage.inputPassword(loginData.getSimpleUserPassword());
         loginPage.clickLoginButton();
         loginPage.clickUserDropdown();
         loginPage.clickSignOut();
     }
 
     @AfterClass
-    public void tearDown(){ driver.close();
+    public void tearDown(){ driver.quit();
     }
 }

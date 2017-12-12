@@ -6,7 +6,6 @@
 /home/gigavak/pokupon/src/test/java/someTests/SwitchBrowserTabsChrome.java
 /home/gigavak/pokupon/src/test/java/pokupon/autotest/pages/LoginPage.java
 /home/gigavak/pokupon/src/test/java/someTests/newClass.java
-/home/gigavak/pokupon/src/test/java/pokupon/autotest/tests/InvalidAuthorizationPageTest.java
 /home/gigavak/pokupon/src/test/java/pokupon/autotest/tests/AddSearchRuleTest.java
 /home/gigavak/pokupon/src/test/java/pokupon/autotest/globalTestData/DriverFactory.java
 /home/gigavak/pokupon/src/test/java/someTests/TestStack.java
@@ -17,6 +16,7 @@
 /home/gigavak/pokupon/src/test/java/someTests/GetTextCopyPaste.java
 /home/gigavak/pokupon/src/test/java/someTests/DragAndDrop.java
 /home/gigavak/pokupon/src/test/java/someTests/HelloWorldRestAssured.java
+/home/gigavak/pokupon/src/test/java/pokupon/autotest/tests/AuthorizationInvalidPageTest.java
 /home/gigavak/pokupon/src/test/java/pokupon/autotest/pages/ForgetPasswordPage.java
 /home/gigavak/pokupon/src/test/java/someTests/GetCookie.java
 /home/gigavak/pokupon/src/test/java/pokupon/autotest/pages/CreateShare.java
