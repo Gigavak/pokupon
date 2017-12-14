@@ -25,7 +25,7 @@ public class CreatePurchaseCouponTest {
 
         createPurchaseCoupon = new CreatePurchaseCoupon(driver);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(145, TimeUnit.SECONDS);
         driver.get("https://pokupon.ua/users/sign_in");
     }
 
