@@ -27,7 +27,7 @@ public class PurchaseWithoutRegistration extends PurchaseShare {
     private WebElement paymantBank;
 
     @FindBy (css = ".orders > div:nth-child(1) > h2:nth-child(1)")
-    private WebElement checkH2BanklPaje;
+    private WebElement checkH2BankPaje;
 
     public PurchaseWithoutRegistration(WebElement mainShare, WebElement multiButtonBuy, WebElement firstButtonInSelect, WebElement simpleButtonBuy, WebElement castomerEmail, WebElement isLogined, WebElement paymantTerminal, WebElement closeCheckEmailPopup, WebElement checkH2TerminalPaje, WebElement paymantBank, WebElement checkH2BanklPaje) {
         super(mainShare, multiButtonBuy, firstButtonInSelect, simpleButtonBuy);
@@ -37,7 +37,7 @@ public class PurchaseWithoutRegistration extends PurchaseShare {
         this.closeCheckEmailPopup = closeCheckEmailPopup;
         this.checkH2TerminalPaje = checkH2TerminalPaje;
         this.paymantBank = paymantBank;
-        this.checkH2BanklPaje = checkH2BanklPaje;
+        this.checkH2BankPaje = checkH2BankPaje;
     }
     public PurchaseWithoutRegistration(){
         super();
@@ -91,12 +91,12 @@ public class PurchaseWithoutRegistration extends PurchaseShare {
         this.paymantBank = paymantBank;
     }
 
-    public WebElement getCheckH2BanklPaje() {
-        return checkH2BanklPaje;
+    public WebElement getCheckH2BankPaje() {
+        return checkH2BankPaje;
     }
 
-    public void setCheckH2BanklPaje(WebElement checkH2BanklPaje) {
-        this.checkH2BanklPaje = checkH2BanklPaje;
+    public void setCheckH2BankPaje(WebElement checkH2BanklPaje) {
+        this.checkH2BankPaje = checkH2BanklPaje;
     }
 
     public WebDriver driver;
@@ -120,13 +120,42 @@ public class PurchaseWithoutRegistration extends PurchaseShare {
     public void checkIsLogined(String email){
         String[] emailPart = email.split("@");
         if (isLogined.getText().equals(emailPart[0])){
-            System.out.println("User is logined");
-            System.out.println(emailPart[0].toString());
+            System.out.println("User is login");
+            System.out.println("first part of email = " + emailPart[0].toString());
         } else {
             System.out.println("Problems with registration");
-            System.out.println(emailPart[0].toString());
+            System.out.println("first part of email = " + emailPart[0].toString());
         }
     }
+
+    public void checkIsNotLogined(){
+        String signOut = "Войти";
+        if (isLogined.getText().equals(signOut)){
+            System.out.println("User isn't login");
+        }else {
+            System.out.println("something go wrong log in button = " + isLogined.getText().toString());
+        }
+    }
+
+    public void checkH2TitleTerminalPaje(){
+        String h2 = "Оплата через терминалы";
+        if(checkH2TerminalPaje.getText().toString().equals(h2)){
+            System.out.println("success, h2 = " + checkH2TerminalPaje.getText().toString());
+        }else {
+            System.out.println("We have a problem with h2, h2 = " + checkH2TerminalPaje.getText().toString());
+        }
+
+    }
+
+    public void checkH2TitleBankPaje(){
+        String h2 = "Оплата в кассе банка";
+        if (checkH2BankPaje.getText().toString().equals(h2)){
+            System.out.println("success, h2 = " + checkH2BankPaje.getText().toString());
+        } else {
+            System.out.println("We have a problem with h2, h2 = " + checkH2BankPaje.getText().toString());
+        }
+    }
+
 
 
 }

@@ -30,7 +30,8 @@ public class PurchaseShareTest {
         try {
             purchaseShare.clickFirstButtonInSelect();
         }catch (NoSuchElementException e){
-            }
+        }catch (Exception e){
+        }
     }
 
 

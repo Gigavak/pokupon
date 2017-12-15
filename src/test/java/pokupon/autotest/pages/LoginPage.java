@@ -24,10 +24,10 @@ public class LoginPage {
     @FindBy(xpath = ".//*[@id='popup-sign-in-form-submit']")
     WebElement loginButton;
 
-    @FindBy(xpath = "/html/body/header/section[3]/div/div/label")
+    @FindBy(css = ".login")
     WebElement userDropdown;
 
-    @FindBy(xpath = "/html/body/header/section[3]/div/div/div/a[5]")
+    @FindBy(css = ".user-menu > a:nth-child(6)")
     WebElement userSignOut;
 
     public void inputLogin(String login){
