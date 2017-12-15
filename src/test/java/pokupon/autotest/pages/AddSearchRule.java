@@ -40,11 +40,11 @@ public class AddSearchRule {
     @FindBy(id = "search_condition_keyword_provider_pn")
     WebElement radioButtonPN;
 
-    @FindBy(xpath = ".//*[@id='new_search_condition_keyword']/div[2]/div[2]/div[2]/div/fieldset/div/ul/li[6]/ul/li[4]/label")
+    @FindBy(xpath = "//*[@id=\"categories_ids_\"]")
     WebElement chooseCategory;
 
-   // @FindBy(id = "submit_form")
-    //WebElement submitButton;
+    @FindBy(id = "submit_form")
+    WebElement submitButton;
 
 
     public void inputLogin(String login){
@@ -71,8 +71,8 @@ public class AddSearchRule {
     public void clickCategoryButton(){
         chooseCategory.click();
     }
-    //public void clickSubmitButton(){
-    //    submitButton.click();
-   // }
+    public void clickSubmitButton(){
+        submitButton.click();
+    }
 
 }

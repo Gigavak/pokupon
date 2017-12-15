@@ -1,6 +1,7 @@
 package pokupon.autotest.tests;
 
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pokupon.autotest.globalTestData.DriverFactory;
@@ -11,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 import static pokupon.autotest.globalTestData.DriverFactory.driver;
 
-public class InvalidAuthorizationPageTest {
+public class AuthorizationInvalidPageTest {
 
     public static AuthorizationPage authorizationPage;
     LoginData loginInput = new LoginData();
@@ -20,13 +21,13 @@ public class InvalidAuthorizationPageTest {
     @BeforeClass
     public static void setup() {
 
-        DriverFactory.getBrowser("Chrome");
+        DriverFactory.getBrowser("Firefox");
 
         driver = DriverFactory.driver;
 
         authorizationPage = new AuthorizationPage(driver);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get("https://pokupon.ua/users/sign_in");
     }
     @Test
@@ -61,6 +62,8 @@ public class InvalidAuthorizationPageTest {
         authorizationPage.inputPassword(loginInput.getInvalidUserPassword());
         authorizationPage.clickLoginButton();
     }
-
+    @AfterClass
+    public void tearDown(){ driver.quit();
+    }
 
 }

@@ -25,13 +25,13 @@ public class ForgetPasswordTest {
 
         forgetPasswordPage = new ForgetPasswordPage(driver);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.get("https://pokupon.ua/users/sign_in");
         System.out.println("All tests started");
         System.out.println("Page title is: " + driver.getTitle());
     }
 
-    @Test
+    @Test(enabled = false)
     public void sendForgetPassword(){
 
 

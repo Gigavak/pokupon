@@ -5,8 +5,8 @@ import java.util.Random;
 public class RandomEmail extends LoginData {
     private String randomMail = randomEmail(SaltString());
 
-    public RandomEmail(String managerUserName, String managerUserPassword, String simpleUserName, String simpleUserPassword, String invalidUserName, String invalidUserPassword, String newUserRegistrationName, String newUserMailLogin, String newUserMailPassword, String randomMail) {
-        super(managerUserName, managerUserPassword, simpleUserName, simpleUserPassword, invalidUserName, invalidUserPassword, newUserRegistrationName, newUserMailLogin, newUserMailPassword);
+    public RandomEmail(String managerUserName, String managerUserPassword, String simpleUserName, String simpleUserPassword, String invalidUserName, String invalidUserPassword, String newUserMailPassword, String randomMail) {
+        super(managerUserName, managerUserPassword, simpleUserName, simpleUserPassword, invalidUserName, invalidUserPassword,newUserMailPassword);
         this.randomMail = randomMail;
     }
     public RandomEmail (){

@@ -1,6 +1,7 @@
 package pokupon.autotest.tests;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pokupon.autotest.globalTestData.DriverFactory;
@@ -22,8 +23,7 @@ public class CreateShareTest {
     public static void setup(){
 
 
-        DriverFactory.getBrowser("Chrome");
-
+        DriverFactory.getBrowser("Firefox");
         driver = DriverFactory.driver;
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -165,6 +165,9 @@ public class CreateShareTest {
         createShare.addImage();
         createShare.uploadImageLogo("/home/gigavak/Pictures/images.jpeg");
         createShare.submit();
+    }
+    @AfterClass
+    public void tearDown(){ driver.quit();
     }
 }
 
