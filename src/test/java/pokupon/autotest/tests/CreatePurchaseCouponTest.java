@@ -38,7 +38,7 @@ public class CreatePurchaseCouponTest {
         driver.get("https://pokupon.ua/manager");
         createPurchaseCoupon.clickChooseButton();
         createPurchaseCoupon.addPurchaseCoupon();
-        createPurchaseCoupon.couponTitle(randomEmail.getSaltString());
+        createPurchaseCoupon.couponTitle(randomEmail.SaltString());
         createPurchaseCoupon.couponDiscount("20");
         createPurchaseCoupon.couponStartAt("2017-12-11 00:00:00");
         createPurchaseCoupon.couponFinishAt("2018-02-28 00:00:00");

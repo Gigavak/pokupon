@@ -1,3 +1,2 @@
 .idea
-src/test/java/someTests/Box.java
-src/test/java/someTests/Average.java
+src/test/java/someTests/TestClass.java
