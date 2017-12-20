@@ -3,7 +3,6 @@ package pokupon.autotest.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pokupon.autotest.globalTestData.DriverFactory;
@@ -59,7 +58,7 @@ public class NewUserRegistrationTest {
         newUserRegistration.submitContinue();
 
     }
-    @AfterClass
-    public void tearDown(){ driver.quit();
-    }
+//    @AfterClass
+//    public void tearDown(){ driver.quit();
+//    }
 }
